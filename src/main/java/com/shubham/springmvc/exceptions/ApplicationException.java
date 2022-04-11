@@ -1,0 +1,8 @@
+package com.shubham.springmvc.exceptions;
+
+public class ApplicationException extends RuntimeException{
+
+    public ApplicationException(String message){
+        super(message);
+    }
+}
