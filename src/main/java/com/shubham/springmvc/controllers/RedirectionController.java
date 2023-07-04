@@ -9,6 +9,6 @@ public class RedirectionController {
     @GetMapping("/Linkedin")
     public String redirectOut(){
         System.out.println("in redirect controller");
-        return "redirect:https://www.linkedin.com";
+        return "redirect:https://www.linkedin.com/in/shubhamkumar-s/";
     }
 }
