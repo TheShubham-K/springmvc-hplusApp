@@ -45,20 +45,33 @@
 	<!-- guarantee -->
 
             <c:if test="${!empty(products)}">
+
                 <section id="products" class="section">
-                <c:forEach var="product" items="${products}">
+                <!-- not used code-->
+                <!-- container text
                 <div class="productContainer">
-
-                                <div class="productContainerItem">
-                                    <img id="pic1" src="${product.imagePath}">
-                                    <input type="text" name="product"
-                                        value="${product.name}"><br />
-
-                                </div>
+                    <c:forEach var="product" items="${products}">
+                    <div class="productContainerItem">
+                        <img id="pic1" src="${product.imagePath}">
+                        <input type="text" name="product" value="${product.name}" readonly>
+                    </div>
                     </c:forEach>
-                </div>
+                </div> till here -->
+
+
+                <table class="productContainer">
+                    <c:forEach items="${products}" var="product">
+                        <tr class="productContainerItem">
+                            <td>
+                                <img src="${product.imagePath}"/>
+                                <input type="text" name="product" value="${product.name}" readonly/>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                </table>
 
                 </section>
+
             </c:if>
 
 	<section id="history" class="section">

@@ -588,6 +588,12 @@ section#registration {
 .productContainer {
     padding: 10px;
     margin: 10px;
+    display: flex;
+}
+
+.productContainer::after {
+    clear: both;
+    display: table;
 }
 
 .productContainerItem {
